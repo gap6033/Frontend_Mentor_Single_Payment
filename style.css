@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: hsl(204, 43%, 93%);
+    /* border: 1px solid red; */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 675px;
+    /* border: 1px solid green; */
+    /* margin set to auto aligns the element in the center of the parent element, margin: 0 auto, would center the element horizontally, margin: auto, would center both vertically and horizontally  */
+    /* margin: auto; */
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.row1 {
+    /* border: 1px solid orange; */
+    flex-grow: 1;
+    background-color: white;
+    padding: 38px;
+    color: hsl(218, 22%, 67%);
+    max-width:100%
+}
+
+.row2_col1 {
+    padding: 38px;
+    background-color: hsl(172, 92%, 33%);
+    flex-grow: 1;
+    color: white;
+    width: 50%;
+    flex-shrink:1;
+}
+
+.row1 h3{
+    color: hsl(71, 73%, 54%)
+}
+
+.row2_col2 {
+    padding: 38px;
+    background-color:hsl(172, 95%, 40%);
+    flex-grow: 1;
+    color: #ffffff;
+    width: 50%;
+    flex-shrink:1;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color:hsl(172, 92%, 33%);
+}
+
+button{
+    background-color: hsl(71, 73%, 54%); 
+    padding: 16px 90px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    padding: 16px 0;
+    /* use this width instead of setting horizontal padding values, as fixed padding values don't change when the flex item shrinks, however, this width makes it dynamic */
+    width:100%;
+    box-shadow: 0 5px 10px 10px rgb(0, 0, 0, 0.05);
+}
+
+
+
+@media (max-width:375px){
+    .row2_col1 {
+        width: 100%;
+    }    
+    .row2_col1 {
+        width: 100%;
+    }    
+}
